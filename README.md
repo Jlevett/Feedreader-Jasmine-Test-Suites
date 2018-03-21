@@ -18,19 +18,19 @@ Note: Verified compatibility in Chrome
 
 ### Test Suite 1
 Check the RSS Feeds is:
-	1. Defined.
-	2. Has urls.
-	3. Has names.
+1. Defined.
+2. Has urls.
+3. Has names.
 
 ### Test Suite 2
 Check the menu is:
-	1. Hidden by default.
-	2. Toggles between hidden and shown when clicked.
+1. Hidden by default.
+2. Toggles between hidden and shown when clicked.
 
 ### Test Suite 3
 Intial entries:
-	1. Contains at least a single entry within the feed area.
+1. Contains at least a single entry within the feed area.
 
 ### Test Suite 4
 New feed selection:
-	1. Changes the content in the feed area.
+1. Changes the content in the feed area.
