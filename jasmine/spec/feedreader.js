@@ -92,9 +92,7 @@ $(function() {
         let feedContainerElement = document.querySelector('.feed');
 
         beforeEach(function(done) {
-            loadFeed(0, function() {
-                done();
-            });
+            loadFeed(0, done);
         });
 
         it('contains at least a single entry within the feed area',function() {
