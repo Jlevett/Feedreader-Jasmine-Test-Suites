@@ -6,20 +6,30 @@
  * jQuery.
  */
 
-// The names and URLs to all of the feeds we'd like available.
+/* The names and URLs to all of the feeds we'd like available.
+ * On top of predefined feeds (Udacity Blog, CSS Tricks, HTML5 Rocks
+ * and Linear Digressions), added two more feeds from CNET News and
+ * TechCrunch Startups.
+ */
 var allFeeds = [
     {
         name: 'Udacity Blog',
         url: 'http://blog.udacity.com/feed'
     }, {
         name: 'CSS Tricks',
-        url: 'http://feeds.feedburner.com/CssTricks'
+        url: 'http://css-tricks.com/feed'
     }, {
         name: 'HTML5 Rocks',
         url: 'http://feeds.feedburner.com/html5rocks'
     }, {
         name: 'Linear Digressions',
         url: 'http://feeds.feedburner.com/udacity-linear-digressions'
+    }, {
+        name: 'CNET News',
+        url: 'http://www.cnet.com/rss/news/'
+    }, {
+        name: 'TechCrunch Startups',
+        url: 'http://feeds.feedburner.com/TechCrunch/startups'
     }
 ];
 
@@ -86,6 +96,7 @@ function init() {
 /* Google API: Loads the Feed Reader API and defines what function
  * to call when the Feed Reader API is done loading.
  */
+google.load('feeds', '1');
 google.setOnLoadCallback(init);
 
 /* All of this functionality is heavily reliant upon the DOM, so we
